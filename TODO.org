@@ -1,0 +1,11 @@
+Bincode
+=======
+- validate
+- throw on invalid sequence when decoding
+- create a parser which can be invoked mulitple times to complete the parsing.
+	BincodeParser p = ...;
+	p.parse(data1);
+	p.parse(data2);
+	if (p.isDone())
+		....
+	
